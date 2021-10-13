@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Connect and meet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="public/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="public/Assets/css/style_test.css">
+    <script src="//kit.fontawesome.com/6510466b6c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <navbar>
+        <div class="logo">Connectify</div>
+    </navbar>
+
+    <div class="main">
+        <div class="create-join">
+            <div class="text">
+                <div class="head">Join any meeting</div>
+                <div class="subtext">we are providing services like screen sharing and video calling etc.</div>
+            </div>
+            <button id="createroom" class="createroom-butt unselectable new_meeting">Create Room</button><br>
+
+            <button id="enter_code"class="btn btn-lg btn-outline-secondary text-dark font-weight-bold display-center"
+                style="background-color: #ffffff ">
+                <span class="material-icons mr-2">keyboard</span>
+                <input type="text" placeholder="Enter code" style="border:none" id="entercode">
+            </button>
+            <button id="joinroom" class="createroom-butt joinroom">Join</button><br>
+        </div>
+        <div class="video-cont">
+            <video class="video-self" autoplay muted playsinline></video>
+            <div class="settings">
+                <div class="device" id="mic"><i class="fas fa-microphone"></i></div>
+                <div class="device" id="webcam"><i class="fas fa-video"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function(){
+            $(document).on("click","#joinroom",function(){ 
+                var join_value = $("#entercode").val();
+                var meetingURL = window.location.origin+"?meetingID="+join_value;
+                window.location.replace(meetingURL);
+            })
+            $(document).on("click",".new_meeting",function(){ 
+                var eight_d_value = Math.floor(Math.random()*100000000)
+                var meetingURL = window.location.origin+"?meetingID="+eight_d_value;
+                window.location.replace(meetingURL);
+            })
+        })
+    </script>
+
+
+
+    <script src="action.js"></script>
+</body>
+
+</html>
