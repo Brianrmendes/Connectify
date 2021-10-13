@@ -634,3 +634,9 @@ var MyApp = (function () {
     },
   };
 })();
+
+  function openWin() {
+
+    myWindow = window.open("compiler.html", "myWindow", "width=1000,height=700"); 
+
+}
