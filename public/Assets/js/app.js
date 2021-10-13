@@ -43,7 +43,7 @@ var AppProcess = (function () {
       } else {
         audio.enabled = false;
         $(this).html(
-          "<span class='material-icons' style='width: 100%;'>mic-off</span>"
+          "<span class='material-icons' style='width: 100%;'>mic_off</span>"
         );
         removeMediaSenders(rtp_aud_senders);
       }

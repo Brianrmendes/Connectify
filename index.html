@@ -33,7 +33,7 @@
 
 <body>
     <main class=" d-flex flex-column home_wrap">
-        <div class="g_top text-dark">
+        <div class="g_top text-dark" style="background-color:rgb(220, 218, 245) ;" >
             <div class="top_remote_video_show_wrap d-flex">
                 <div id="meetingContainer" class="w-75" style="display: none;
                 flex-basis: 75%; ">
@@ -56,10 +56,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="g-right-details-wrap bg-light text-secondary 
-                h-100" style="flex-basis: 25%; z-index: 1; display: none;">
+                <div class="g-right-details-wrap text-secondary 
+                h-100" style="flex-basis: 25%; z-index: 1; display: none; background-color:rgb(191, 187, 237) ;">
                     <div class="meeting-heading-wrap d-flex 
-                    justify-content-between align-items-center pr-3 pl-3" style="height: 10vh;">
+                    justify-content-between align-items-center pr-3 pl-3" style="height: 10vh; color: black;">
                         <div class="meeting-heading font-weight-bold ">Meeting Details</div>
                         <div class="meeting-heading-cross display-center cursor-pointer">
                             <span class="material-icons">clear</span>
@@ -71,15 +71,15 @@
                         <div class="people-heading display-center 
                         cursor-pointer">
                             <div class="people-heading-icon display-center mr-1">
-                                <span class="material-icons">people</span>
+                                <span class="material-icons" style="color: black;">people</span>
                             </div>
-                            <div class="people-heading-icon display-center">
-                                Participant (<span class="participant-count">1</span>)
+                            <div class="people-heading-icon display-center" style="color: black;">
+                                Participants
                             </div>
                         </div>
                         <div class="chat-heading d-flex just-content-round 
                         align-items-center
-                        cursor-pointer">
+                        cursor-pointer" style="color: black;">
                             <div class="chat-heading-icon display-center
                             mr-1">
                                 <span class="material-icons">
@@ -96,23 +96,12 @@
                             <div class="in-call-wrap d-flex justify-content-between align-items-center mb-3">
                                 <div class="participant-img-name-wrap display-center cursor-pointer">
                                     <div class="participant-img">
-                                        <img src="public/Assets/images/other.jpg" alt="" class="border-secondary"
+                                        <img src="public/Assets/images/bruh.jpg" alt="" class="border-secondary"
                                             style="height: 40px; width: 40px; border-radius: 50%;">
                                     </div>
                                     <div class="participant-name ml-2">You</div>
                                 </div>
-                                <div class="participant-action-wrap display-center ">
-                                    <div class="participant-action-pin display-center mr-2 cursor-pointer">
-                                        <span class="material-icons">
-                                            push_pin
-                                        </span>
-                                    </div>
-                                    <div class="participant-action-dot display-center mr-2 cursor-pointer">
-                                        <span class="material-icons">
-                                            more_vert
-                                        </span>
-                                    </div>
-                                </div>
+                            
                             </div>
                         </div>
                         <div class="chat-show-wrap text-secondary flex-column justify-content-between h-100"
@@ -137,25 +126,23 @@
                     </div>
                 </div>
 
-                <div class="g_top_left bg-light text-secondary w-25 
+                <div class="g_top_left text-secondary w-25 
                 d-flex align-items-center justify-content-between 
-                pl-2 pr2">
+                pl-2 pr2" style="background-color: rgb(162, 156, 228);">
                     <div class="top_left_participant_wrap pt-2 cursor-pointer">
-                        <div class="top_left_participant_icon">
+                        <div class="top_left_participant_icon" style="color: black;">
                             <span class="material-icons">people</span>
                         </div>
-                        <div class="participant-count">1
-
-                        </div>
+                        <div class="top-left-participant-count participant-count" >1</div>
                     </div>
-                    <div class="top_left_chat_wrap pt-2 cursor-pointer">
+                    <div class="top_left_chat_wrap pt-2 cursor-pointer" style="color: black;">
                         <span class="material-icons">message</span>
                     </div>
                     <div class="top_left_time_wrap"></div>
                 </div>
             </div>
-            <div class="g_bottom bg-light m-0 d-flex justify-content-between
-        align-items-center">
+            <div class="g_bottom d-flex justify-content-between
+        align-items-center" style="background-color: rgb(162, 156, 228);">
                 <div class="bottom_left d-flex" style="height: 10vh;">
                     <div class="g-details border border-sucesss mb-2" style="display: none;
                     min-height: 14vh;">
@@ -208,14 +195,14 @@
 
                         </div>
                     </div>
-                    <div class="display-center cursor-pointer meeting-details-button">
+                    <div class="display-center cursor-pointer meeting-details-button" style="color: black;">
                         Meeting Details<span class="material-icons">keyboard_arrow_down
                         </span>
                     </div>
                 </div>
                 <div class="bottom_middle d-flex justify-content-center align-items-center" style="height: 10vh;">
                     <div class="mic_toggle_wrap action-icon-style display-center mr-2 cursor-pointer"
-                        id="micMuteUnmute">
+                        id="micMuteUnmute" style="color: black;">
                         <span class="material-icons" style="width: 100%;">mic_off</span>
                     </div>
                     <div class="end-call-wrap action-icon-style display-center mr-2 cursor-pointer">
@@ -227,27 +214,23 @@
               display-center
               mr-2
               cursor-pointer
-            " onclick="openWin()">
+            " onclick="openWin()" style="color: black;">
                         <span class="material-icons ">code</span>
                     </div>
                     <div class="video-toggle-wrap action-icon-style
-            display-center cursor-pointer" id="videoCamOnOff">
+            display-center cursor-pointer" id="videoCamOnOff" style="color: black;">
                         <span class="material-icons" style="width: 100%;">videocam_off</span>
                     </div>
                 </div>
                 <div class="bottom_right d-flex justify-content-center align-items-center 
         mr-3" style="height: 10vh;">
                     <div class="present-now-wrap d-flex justify-content-center flex-column
-            align-items-center mr-5 cursor-pointer" id="btnScreenShareOnOff">
+            align-items-center mr-5 cursor-pointer" id="btnScreenShareOnOff" style="color: black;">
                         <span class="material-icons">present_to_all</span>
                         <div>Present Now</div>
                     </div>
 
-                    <div class="option-wrap cursor-pointer display-center" style="height: 10vh; position: relative;">
-                        <div class="option-icon">
-                            <span class="material-icons">more_vert</span>
-                        </div>
-                    </div>
+                
                 </div>
 
             </div>

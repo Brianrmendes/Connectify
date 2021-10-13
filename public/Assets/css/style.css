@@ -20,7 +20,7 @@ ul{
 }
 
 .nav-item a{
-    color: gray !important;
+    color: gray ;
     font-size: 16px;
     padding: 0 10px;
     font-weight: 600;
@@ -182,3 +182,7 @@ video{
     font-size: 14px;
     padding-left: 10px;
 }
+
+.display-center>h2{
+    color: white;
+  }
