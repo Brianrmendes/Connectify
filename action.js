@@ -54,7 +54,8 @@ mic.addEventListener('click', () => {
             })
 
         mic.classList = "nodevice";
-        mic.innerHTML = `<i class="fas fa-microphone-slash"></i>`;
+        mic.innerHTML = 
+        ;
         micAllowed = 0;
     }
     else {
